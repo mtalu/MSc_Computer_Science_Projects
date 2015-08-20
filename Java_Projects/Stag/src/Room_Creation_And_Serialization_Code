@@ -1,0 +1,74 @@
+/*Room road, inFrontOfGate, garden, inside, leftGarden, rightGarden, shadySpot, topOfTree, 
+		upstairsMasterBedroom, upstairs;
+		
+		road = new Room("the middle of the road. You should probably carry on forward.");
+		inFrontOfGate = new Room("front of a sturdy iron gate. You see a large house in front of you");
+		garden = new Room("a beatiful garden surrounding the house. You could explore it in many directions", true, "The gate is locked.");
+		inside = new Room("inside the house.", true, "You knock on the door but nobody answers");
+		leftGarden = new Room("the the garden to the left of the house. There is a shady spot underneath a tree that looks very welcoming");
+		rightGarden = new Room("the garden to the right of the house. Not much to see here");
+		shadySpot = new Room("a shady spot beneath a tall tree. You feel incredibly tired and sit down");
+		topOfTree = new Room("the top branch of the tree. You look right and see an open window");
+		upstairsMasterBedroom = new Room("a bedroom on the top floor of the house. It takes your eyes a while to adjust to the darkness,\n "
+				+ "but when they do you notice a terrified looking woman staring up at you from a bed.");
+		upstairs = new Room("the top floor of the house. End of demo.", true, "You think about running out of the room, but the woman starts to scream and"
+				+ " you feel paralized");
+		
+		road.setExit("forward", inFrontOfGate);
+		inFrontOfGate.setExit("back", road);
+		inFrontOfGate.setExit("forward", garden);
+		garden.setExit("back", inFrontOfGate);
+		garden.setExit("forward", inside);
+		garden.setExit("left", leftGarden);
+		garden.setExit("right", rightGarden);
+		inside.setExit("back", garden);
+		leftGarden.setExit("back", garden);
+		leftGarden.setExit("forward", shadySpot);
+		rightGarden.setExit("back", garden);
+		shadySpot.setExit("back", leftGarden);
+		shadySpot.setExit("up", topOfTree);
+		topOfTree.setExit("down", shadySpot);
+		topOfTree.setExit("right", upstairsMasterBedroom);
+		upstairsMasterBedroom.setExit("back", topOfTree);
+		upstairsMasterBedroom.setExit("forward", upstairs);
+		upstairs.setExit("back", upstairsMasterBedroom);
+
+		
+		road.setSurroundings("There is something glimmering on the road in front of you. It looks like a key.");
+		inFrontOfGate.setSurroundings("You look to your left and spot a battering ram. How odd.");
+		shadySpot.setSurroundings("As you are sitting down beneath the tree you spot a rope dangling above you");
+		topOfTree.setSurroundings("You look around you and see a bird's nest with something glittering inside. It looks like it might be a ring");
+		upstairsMasterBedroom.setSurroundings("You're too distracted by the terrified looking woman to notice anything else");
+		
+		road.addItem(new Item("key", "You use the key to unlock the gate. The gate springs open", true));
+		inFrontOfGate.addItem(new Item("ram", "You attempt to ram down the gate. No use, it's too strong!", false));
+		topOfTree.addItem(new Item("ring", "\"My ring, my ring!\" shouts the woman. \"Where"
+				+ " did you find it?\nI've been looking everywhere for it. Thank you so much!\n"
+				+ "You are an honoured guest in my house now and may explore it freely.\" ", true));
+		
+		inFrontOfGate.addUsableItem("key");
+		inFrontOfGate.addUsableItem("ram");
+		upstairsMasterBedroom.addUsableItem("ring");
+		
+		currentRoom = road;
+		
+		try {
+			FileOutputStream fileOut = new FileOutputStream("gameObjects.ser");
+			ObjectOutputStream out = new ObjectOutputStream(fileOut);
+			out.writeObject(road);
+			out.writeObject(inFrontOfGate);
+			out.writeObject(garden);
+			out.writeObject(inside);
+			out.writeObject(leftGarden);
+			out.writeObject(rightGarden);
+			out.writeObject(shadySpot);
+			out.writeObject(topOfTree);
+			out.writeObject(upstairsMasterBedroom);
+			out.writeObject(upstairs);
+			out.close();
+			fileOut.close();
+			System.out.printf("Serialized data");
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}*/

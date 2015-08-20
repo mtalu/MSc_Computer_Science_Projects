@@ -1,0 +1,6 @@
+towerPos x 200 y 100
+towerPos x 200 y 300
+towerPos x 200 y 500
+totalWaves total 3
+wave waveNum 1 enemyType 1 numberOfEnemies 50
+delay delayTime 10

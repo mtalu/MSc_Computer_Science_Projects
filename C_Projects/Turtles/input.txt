@@ -1,0 +1,1 @@
+{ RT 90 DO A FROM 1 TO 50 { SET B := A 10 * ; FD B RT 144 } }

@@ -1,0 +1,4 @@
+towerPos x INT y INT
+totalWaves total INT
+wave waveNum INT  enemyType INT 
+delay delayTime INT

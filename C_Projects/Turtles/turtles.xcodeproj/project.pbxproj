@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C140BA51A614387002FED7E /* my_sdl_setup.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C140BA41A614387002FED7E /* my_sdl_setup.c */; };
+		4C3247091A77A2CF006872F0 /* infix_converter.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C3247071A77A2CF006872F0 /* infix_converter.c */; };
+		4C580BB51A6D1FEA005F90E8 /* testing.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C580BB31A6D1FEA005F90E8 /* testing.c */; };
+		4C81F7311A6B15600042E6FA /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4C81F7301A6B15600042E6FA /* Makefile */; };
+		4CC998DB1A66A5F4002E85B8 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CC998D91A66A5F4002E85B8 /* stack.c */; };
+		4CD6B18A1A758B37006BBFB6 /* stack_generic.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6B1891A758B37006BBFB6 /* stack_generic.c */; };
+		4CDA59A31A5BE05400854E8E /* turtles.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA59A21A5BE05400854E8E /* turtles.c */; };
+		4CDA59AA1A5BE0A500854E8E /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDA59A91A5BE0A500854E8E /* SDL2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CDA599D1A5BE05400854E8E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C140BA41A614387002FED7E /* my_sdl_setup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = my_sdl_setup.c; sourceTree = "<group>"; };
+		4C140BA61A614394002FED7E /* my_sdl_setup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_sdl_setup.h; sourceTree = "<group>"; };
+		4C3247061A779608006872F0 /* extension.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = extension.pdf; sourceTree = "<group>"; };
+		4C3247071A77A2CF006872F0 /* infix_converter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infix_converter.c; sourceTree = "<group>"; };
+		4C3247081A77A2CF006872F0 /* infix_converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infix_converter.h; sourceTree = "<group>"; };
+		4C580BAE1A6D0DDA005F90E8 /* sput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sput.h; sourceTree = "<group>"; };
+		4C580BB21A6D137E005F90E8 /* turtles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = turtles.h; sourceTree = "<group>"; };
+		4C580BB31A6D1FEA005F90E8 /* testing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testing.c; sourceTree = "<group>"; };
+		4C580BB41A6D1FEA005F90E8 /* testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testing.h; sourceTree = "<group>"; };
+		4C794E771A5D703B006AE7F8 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		4C81F7301A6B15600042E6FA /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4CC998D91A66A5F4002E85B8 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		4CC998DA1A66A5F4002E85B8 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		4CD6B1841A751F44006BBFB6 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		4CD6B1881A758B37006BBFB6 /* stack_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack_generic.h; sourceTree = "<group>"; };
+		4CD6B1891A758B37006BBFB6 /* stack_generic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack_generic.c; sourceTree = "<group>"; };
+		4CDA599F1A5BE05400854E8E /* turtles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = turtles; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDA59A21A5BE05400854E8E /* turtles.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = turtles.c; sourceTree = "<group>"; };
+		4CDA59A91A5BE0A500854E8E /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		4CDE2CEF1A5FF06900FE1FB7 /* Questions */ = {isa = PBXFileReference; lastKnownFileType = text; path = Questions; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CDA599C1A5BE05400854E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDA59AA1A5BE0A500854E8E /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CDA59961A5BE05400854E8E = {
+			isa = PBXGroup;
+			children = (
+				4CDA59A91A5BE0A500854E8E /* SDL2.framework */,
+				4CDA59A11A5BE05400854E8E /* turtles */,
+				4CDA59A01A5BE05400854E8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CDA59A01A5BE05400854E8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA599F1A5BE05400854E8E /* turtles */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CDA59A11A5BE05400854E8E /* turtles */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA59A21A5BE05400854E8E /* turtles.c */,
+				4C580BB21A6D137E005F90E8 /* turtles.h */,
+				4C140BA41A614387002FED7E /* my_sdl_setup.c */,
+				4C140BA61A614394002FED7E /* my_sdl_setup.h */,
+				4CC998D91A66A5F4002E85B8 /* stack.c */,
+				4CC998DA1A66A5F4002E85B8 /* stack.h */,
+				4CD6B1881A758B37006BBFB6 /* stack_generic.h */,
+				4CD6B1891A758B37006BBFB6 /* stack_generic.c */,
+				4C580BB31A6D1FEA005F90E8 /* testing.c */,
+				4C580BB41A6D1FEA005F90E8 /* testing.h */,
+				4C580BAE1A6D0DDA005F90E8 /* sput.h */,
+				4C794E771A5D703B006AE7F8 /* input.txt */,
+				4C81F7301A6B15600042E6FA /* Makefile */,
+				4CDE2CEF1A5FF06900FE1FB7 /* Questions */,
+				4CD6B1841A751F44006BBFB6 /* test.pdf */,
+				4C3247061A779608006872F0 /* extension.pdf */,
+				4C3247071A77A2CF006872F0 /* infix_converter.c */,
+				4C3247081A77A2CF006872F0 /* infix_converter.h */,
+			);
+			path = turtles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CDA599E1A5BE05400854E8E /* turtles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CDA59A61A5BE05400854E8E /* Build configuration list for PBXNativeTarget "turtles" */;
+			buildPhases = (
+				4CDA599B1A5BE05400854E8E /* Sources */,
+				4CDA599C1A5BE05400854E8E /* Frameworks */,
+				4CDA599D1A5BE05400854E8E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = turtles;
+			productName = turtles;
+			productReference = 4CDA599F1A5BE05400854E8E /* turtles */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CDA59971A5BE05400854E8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Michael;
+				TargetAttributes = {
+					4CDA599E1A5BE05400854E8E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 4CDA599A1A5BE05400854E8E /* Build configuration list for PBXProject "turtles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CDA59961A5BE05400854E8E;
+			productRefGroup = 4CDA59A01A5BE05400854E8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CDA599E1A5BE05400854E8E /* turtles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CDA599B1A5BE05400854E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD6B18A1A758B37006BBFB6 /* stack_generic.c in Sources */,
+				4CDA59A31A5BE05400854E8E /* turtles.c in Sources */,
+				4CC998DB1A66A5F4002E85B8 /* stack.c in Sources */,
+				4C81F7311A6B15600042E6FA /* Makefile in Sources */,
+				4C3247091A77A2CF006872F0 /* infix_converter.c in Sources */,
+				4C580BB51A6D1FEA005F90E8 /* testing.c in Sources */,
+				4C140BA51A614387002FED7E /* my_sdl_setup.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4CDA59A41A5BE05400854E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4CDA59A51A5BE05400854E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4CDA59A71A5BE05400854E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CDA59A81A5BE05400854E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CDA599A1A5BE05400854E8E /* Build configuration list for PBXProject "turtles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDA59A41A5BE05400854E8E /* Debug */,
+				4CDA59A51A5BE05400854E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CDA59A61A5BE05400854E8E /* Build configuration list for PBXNativeTarget "turtles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDA59A71A5BE05400854E8E /* Debug */,
+				4CDA59A81A5BE05400854E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CDA59971A5BE05400854E8E /* Project object */;
+}

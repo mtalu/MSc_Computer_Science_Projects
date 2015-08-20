@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rooms>
+	<room>
+		<name>road</name>
+		<description>the middle of the road. You should probably carry on forward.</description>
+		<surroundings>There is something glimmering on the road in front of you. It looks like a key.</surroundings>
+		<item>
+			<name>key</name>
+			<used_string>You use the key to unlock the gate. The gate springs open</used_string>
+			<is_key>true</is_key>
+		</item>
+		
+	</room>
+</rooms>

@@ -1,0 +1,12 @@
+1. Develop each stage using learned OO design methods, don't look at other stages until stage complete so that you get practice refactoring 
+2. Possibly apply a test-driven development, i.e. test cases/methods before actual methods
+3. Deal with potential errors appropriately using exceptions, error messages and possibly assert statements.
+4. Comment classes and methods thoroughly
+5. Keep a snapshot of each completed stage along with report describing the stage, design decisions you made, any refactoring
+	you had to do and any particularly interesting issues that arose during implementation.
+	
+	
+	Notes:
+	-Finish types extension and report
+	-Do extensions and follow the steps above
+	

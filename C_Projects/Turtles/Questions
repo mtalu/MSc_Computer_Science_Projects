@@ -1,0 +1,61 @@
+************************************QUESTIONS*************************************************
+
+************************************REMEMBER**************************************************
+
+GENERAL POINTS
+**************
+- Free anything you dynamically allocated at the end
+- Always check malloc to make sure it is not NULL
+
+SPECIFIC POINTS
+****************
+- CHECK (Changed is number function to verify that token is number, can be positive or negative and decimal point values accepted) : At the moment I only accept positive numbers as input, should I accept negative as well and if so how to deal with that
+- CHECK (Now storing everything as double and then rounding to int at last stage) : At the moment I'm only accepting integers. This causes a problem during division. I need to accept float/double
+   values to fix, but this will affect draw line function which requires int
+- CHECK (when pop fails it returns a negative number, upon which I alert the user that there must be a problem with reverse polish operation): Deal with pop errors
+- CHECK (Now program either stores new variable or overwrites old) Shold there be the possibility of overwriting variables if already in list? Yes
+- CHECK (pointer makes program smaller and more readable) have a pointer for tokens which you can increase instead of keeping variable i
+- CHECK (Program starts to execute instructions as it is interpreting, but lines not redrawing themselves continuously, which I imagine would be needed if making an interactive program with a console) Program should interpret, i.e. execute after each instruction parsed successfully. Not wait until the end.
+- CHECK (Using doxygen comments and everything labelled better) Comment your code better
+- CHECK. Sort error messages, make more helpful and distinguish between command errors and program errors
+- CHECK Write thorough sput tests for: parsing illegal commands, parsing legal commands, executing
+- CHECK Write test report outlining this testing strategy and black box testing.
+- EXTENSION: Think of good way to extend program, implement and describe in extend.txt file (drawing line going out of boundary?)
+- Make sure everything runs on lab computers. Adding infix to tree to RPN converter, make sure you debug it properly. getReversePolish function not working
+
+
+
+
+
+
+
+
+//Trying to get boundaries to work so that lines come back out on opposite ends
+/*if(turtle->newXPos < 0) {
+printf("New xPos less than zero");
+turtle->xPos = WINDOW_WIDTH;
+turtle->newXPos = WINDOW_WIDTH + turtle->newXPos;
+}
+else if(turtle->newXPos > WINDOW_WIDTH) {
+turtle->xPos = 0;
+turtle->newXPos = turtle->newXPos - WINDOW_WIDTH;
+}
+
+while(turtle->newYPos < 0 || turtle->newXPos < 0) {
+if(turtle->newYPos < 0) {
+double distance = turtle->yPos / sin(DEGREE_TO_RADIAN(turtle->angle));
+turtle->xPos = turtle->xPos + distance * sin(DEGREE_TO_RADIAN(turtle->angle));
+turtle->yPos = WINDOW_HEIGHT;
+turtle->newYPos = WINDOW_HEIGHT + turtle->newYPos;
+}
+if(turtle->newXPos < 0) {
+double distance = turtle->xPos / cos(DEGREE_TO_RADIAN((int) turtle->angle % 90));
+turtle->yPos = turtle->yPos + distance * cos(DEGREE_TO_RADIAN((int) turtle->angle % 90));
+turtle->xPos = WINDOW_WIDTH;
+turtle->newXPos = WINDOW_WIDTH + turtle->newXPos;
+}
+
+SDL_RenderDrawLine(d->renderer, ROUND_TO_INT(turtle->xPos), ROUND_TO_INT(turtle->yPos), ROUND_TO_INT(turtle->newXPos), ROUND_TO_INT(turtle->newYPos));
+}*/
+
+{"2", "*", "(", "4", "+", "10", ")", "/", "2"};

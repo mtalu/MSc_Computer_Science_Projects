@@ -1,0 +1,29 @@
+1. Write program in stages, making sure you use good object oriented design, test all
+testable classes, document thoroughly, and write thorough report for each stage.
+
+- Stage 3 - Add playlist panel and other visual cues for user.
+			Playlist panel: JPanel that adds title names to playlist as files are opened
+							Background/foreground colours of titles to indicate selection
+							Double clicking of titles to play them
+							Selection of corresponding titles when user selects different track
+							Add previous/next menu items
+							
+- Stage 4 - Added new My_Track and Playlist classes for better playlist synchronization.
+			Add importing of multiple tracks?
+			Testing
+
+- Stage 5 - Added skins class and changing skins functionality to menu bar
+			Added ID3 track title information to playlist when available
+			Added tooltip to tracks in playlist to display artist and album information
+			Added currently playing track information
+			Added scrollable playlist
+			Added custom cursor
+
+
+Stage 6 - Add support for new file formats, possibly video
+			Adding seek bar
+							
+Bugs:
+
+1. When in fullscreen mode, if you open new track goes back to small screen
+2. Cursor changes back to default when calling skins functions for a short while

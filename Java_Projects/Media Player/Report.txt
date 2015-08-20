@@ -1,0 +1,96 @@
+REPORT
+
+MEDIA PLAYER
+
+I have decided to write a media player for this assignment as I feel it gives me a good
+opportunity to experiment with Java's basic graphics libraries. As with the previous projects,
+I will be using an agile development approach and build up the program features very gradually
+and in stages, with a fully working version of the program after each stage including
+error handling, JUnit testing and Javadoc documentation. I will also be trying to use good object 
+oriented design patterns such as loosely coupled and cohesive classes and methods, encapsulation and
+responsibility driven design. Modifying or extending the program should be as simple as possible and
+involve little to no refactoring.
+
+The media player itself should have an aesthetically pleasing and user-friendly GUI and be capable of
+playing a number of audio file formats. Once these basic requirements have been met
+I will add several extensions such as the ability for users to use different "skins" for the user interface, 
+support for different audio file formats, support for video, support for subtitles if video support has been
+implemented, support for creating playlists, etc. I will comment on how easy it was to add these extensions
+in the report and how previous design decisions may have helped or hindered me.
+
+STAGE 1 - GUI
+
+Since the main aim of the project is to experiment with Java's graphics capabilities, I decided to
+begin implementing the user interface first. I created the GUI class which sets up the main JFrame and creates
+the Menu and Body objects that populate it. Although I initially tried keeping all GUI code in the GUI
+class, I noticed that the class was expanding quickly because of the amount of repetitive code needed to 
+create the Graphics components. Using separate classes keeps them smaller and more responsibility driven
+I also made use of many private methods to split up the task of creating menus, menu items for specific menus, etc,
+which I think makes the class much more readable and will enable me to easily extend the program when new 
+graphics components are needed. I also used a wrapper method to create buttons with an icon and add them
+to a panel, which helps to keep the code DRY.
+
+For error handling I included assertions to test that constructor and method arguments are not null and error
+messages in case of invalid image paths. I have not added any testing as I could not think of a feasible way
+to do this for this stage.
+
+STAGE 2 - MP3 playback
+
+In line with the agile approach of getting a basic version of the application up and running as quickly as
+possible, I decided to make the focus of this stage mp3 audio file playback. I looked into third party libraries
+that could be used to achieve this and decided to use Javazoom Basic Player, mainly as I found it
+the easiest to use and understand. However, since it only supports very basic, higher level audio playback
+functionality I may have to look into different libraries later on if I want to add more complex functionality
+to the media player, e.g. ID3 tag reading.
+
+I added the MyPlayer class for this stage to encapsulate the functionality of the Basic Player. It also
+stores all opened media files in a playlist and includes functionality for selecting previous and next files.
+I used the singleton design pattern in this class since I needed a way to share the same instance of a player
+between the Menu and Body GUI classes and this seemed like a good solution. I then added listeners to
+appropriate objects in the GUI classes to interact with the MyPlayer functions. The result is a basic, but 
+fully-functioning, media player that is currently restricted to mp3 audio playback. I also included some
+testing for the MyPlayer class to ensure that the playlist functionality is working correctly.
+
+STAGE 3 - Playlist
+
+The main problem with the first version of the media player was the lack of any visual cues for the user.
+To improve on this, I added a playlist panel to the GUI to display all files currently in the playlist and 
+highlight the one that is currently open. I also added listeners to the JLabel titles so that users could 
+select a track by clicking on the corresponding title and begin playback by double-clicking on it.
+
+Although I feel that this should have been relatively simple to implement, I think the current program design
+let me down slightly as I found it quite difficult to ensure that the playlist was still in sync after button
+presses, menu item presses and mouse clicks on the titles themselves. I encountered several bugs along the way
+because of this. I will make it the focus of the next stage to refactor the code to make classes more responsibility
+driven and deal with some issues I noticed such as the lack of a unified playlist.
+
+STAGE 4 - Refactoring
+
+For this stage I created two new classes, the My_Track class and the Playlist class. The My_Track class contains
+the audio file's File and JLabel objects and helps to ensure that the two will always be in sync, instead of 
+storing them in separate structures and different classes. The Playlist class stores any number of My_Track objects 
+and the currently selected My_Track object. The two new classes have also helped me to make the My_Player
+class a lot simpler by using the abstractions they provide.
+
+In addition to this I added thorough testing for the two new classes and rewrote the testing for the My_Player
+class as the previous test methods were unfortunately obsolete. I also added functionality for adding several
+audio files at a time with the JFileChooser, mainly for my own benefit to simplify manual testing.
+
+STAGE 5 - Skins
+
+I added a new class called Skins in this stage to deal with any changes in look and feel of the user interface.
+It includes a number of methods to change mainly the colour of the skin, which can be called by the user from
+a menu item. It makes use of a function that recursively obtains all components in a frame, the function is taken
+from: http://stackoverflow.com/questions/6495769/how-to-get-all-elements-inside-a-jframe. Adding the class was 
+relatively simple and did not require any refactoring in the other classes. 
+
+In addition to the Skins class I added several other features to the user interface to experiment a little more 
+with Swing's capabilities, such as a custom cursor, a scroll pane for the playlist and a tooltip for each JLabel 
+title to display further track information. The tooltip information is generated in the My_Track class by reading 
+an mp3 file's ID3v2 tag if it has one. This is done using the 3rd party library mp3agic.
+
+
+Code Acknowledgments:
+
+1. Multi-line tooltips using html tags: http://stackoverflow.com/questions/868651/multi-line-tooltips-in-java
+2. Retrieve all containers in a frame recursively: http://stackoverflow.com/questions/6495769/how-to-get-all-elements-inside-a-jframe

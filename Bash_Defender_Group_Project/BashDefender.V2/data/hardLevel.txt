@@ -1,0 +1,39 @@
+path pathLevel 1 numberOfPaths 4
+towerPos x 10 y 500
+towerPos x 10 y 400
+towerPos x 10 y 300
+towerPos x 10 y 200
+towerPos x 10 y 100
+towerPos x 190 y 190
+towerPos x 190 y 350
+towerPos x 190 y 510
+towerPos x 350 y 190
+towerPos x 350 y 350
+towerPos x 350 y 510
+towerPos x 540 y 450
+towerPos x 490 y 600
+towerPos x 580 y 600
+towerPos x 730 y 490
+towerPos x 845 y 490
+towerPos x 845 y 130
+towerPos x 845 y 300
+towerPos x 730 y 130
+towerPos x 570 y 70
+towerPos x 500 y 250
+totalWaves total 3
+wave waveNum 1 enemyType 1 numberOfEnemies 0 entrance 2 delay 200 level 1
+wave waveNum 1 enemyType 1 numberOfEnemies 5 entrance 2 delay 150 level 1
+wave waveNum 1 enemyType 1 numberOfEnemies 5 entrance 2 delay 150 level 1
+wave waveNum 1 enemyType 1 numberOfEnemies 5 entrance 2 delay 300 level 1
+wave waveNum 1 enemyType 3 numberOfEnemies 10 entrance 2 delay 300 level 1
+wave waveNum 1 enemyType 1 numberOfEnemies 5 entrance 2 delay 1 level 2
+wave waveNum 1 enemyType 3 numberOfEnemies 5 entrance 2 delay 300 level 2
+wave waveNum 1 enemyType 1 numberOfEnemies 5 entrance 2 delay 1 level 2
+wave waveNum 2 enemyType 3 numberOfEnemies 5 entrance 2 delay 300 level 3
+wave waveNum 2 enemyType 1 numberOfEnemies 10 entrance 2 delay 300 level 3
+wave waveNum 2 enemyType 3 numberOfEnemies 10 entrance 2 delay 100 level 3
+wave waveNum 2 enemyType 2 numberOfEnemies 3 entrance 2 delay 100 level 3
+wave waveNum 3 enemyType 1 numberOfEnemies 10 entrance 2 delay 1 level 1
+wave waveNum 3 enemyType 3 numberOfEnemies 10 entrance 2 delay 500 level 1
+wave waveNum 3 enemyType 4 numberOfEnemies 5 entrance 2 delay 1 level 1
+wave waveNum 3 enemyType 2 numberOfEnemies 5 entrance 2 delay 1 level 1
